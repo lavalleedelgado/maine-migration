@@ -1,0 +1,139 @@
+# Configuration for request.sh implementation.
+
+# Patrick Lavallee Delgado
+# Harris School of Public Policy
+# University of Chicago
+# January 2020
+
+# Specify the geography and the name of the table in which to store these data.
+geography: tract
+table: profile
+endpoint: https://api.census.gov/data/!!YEAR!!/acs/acs5/profile?
+
+# Specify API endpoints and variables by year.
+2010:
+  DP02_0078E: population
+  DP05_0072PE: white
+  DP05_0073PE: black
+  DP05_0066PE: hispanic
+  DP05_0075PE: asian
+  DP05_0017E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2011:
+  DP02_0078E: population
+  DP05_0072PE: white
+  DP05_0073PE: black
+  DP05_0066PE: hispanic
+  DP05_0075PE: asian
+  DP05_0017E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2012:
+  DP02_0078E: population
+  DP05_0072PE: white
+  DP05_0073PE: black
+  DP05_0066PE: hispanic
+  DP05_0075PE: asian
+  DP05_0017E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2013:
+  DP02_0078E: population
+  DP05_0072PE: white
+  DP05_0073PE: black
+  DP05_0066PE: hispanic
+  DP05_0075PE: asian
+  DP05_0017E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2014:
+  DP02_0078E: population
+  DP05_0072PE: white
+  DP05_0073PE: black
+  DP05_0066PE: hispanic
+  DP05_0075PE: asian
+  DP05_0017E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2015:
+  DP02_0078E: population
+  DP05_0072PE: white
+  DP05_0073PE: black
+  DP05_0066PE: hispanic
+  DP05_0075PE: asian
+  DP05_0017E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2016:
+  DP02_0078E: population
+  DP05_0072PE: white
+  DP05_0073PE: black
+  DP05_0066PE: hispanic
+  DP05_0075PE: asian
+  DP05_0017E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2017:
+  DP02_0078E: population
+  DP05_0077PE: white
+  DP05_0078PE: black
+  DP05_0071PE: hispanic
+  DP05_0080PE: asian
+  DP05_0018E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
+2018:
+  DP02_0078E: population
+  DP05_0077PE: white
+  DP05_0078PE: black
+  DP05_0071PE: hispanic
+  DP05_0080PE: asian
+  DP05_0018E: median_age
+  DP03_0062E: median_hhinc
+  DP02_0067PE: bachelors
+  DP02_0081E: moved_in_county
+  DP02_0083E: moved_cross_county
+  DP02_0084E: moved_cross_state
+  DP02_0079E: stayed
+  DP04_0050E: housing_units
