@@ -21,7 +21,7 @@ The underlying assumption of this simulation is that individuals move to sort th
 
 #### Top destinations for departures
 
-| Census tract | Destination | Departures |
+| Destination tract | Destination town | Departures |
 | ------------ | ---- | ----- |
 | 23019006300 | Orono | 284 |
 | 23017966400 | Oxford | 217 |
@@ -36,7 +36,7 @@ The underlying assumption of this simulation is that individuals move to sort th
 
 #### Top origins for arrivals
 
-| Census tract | Origin | Arrivals |
+| Origin tract | Origin town | Arrivals |
 | ------------ | ---- | ----- |
 | 23001020700 | Lewiston | 198 |
 | 23001020300 | Lewiston | 189 |
