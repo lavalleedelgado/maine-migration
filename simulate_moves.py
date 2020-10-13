@@ -122,7 +122,7 @@ def __get_origin_tracts(
     '''
     Request the census tracts in the origin county in a year with the count and
     characteristics of departures. This assumes departures are representative of
-    change in the origin tract from the previous year.
+    change in the origin tract in the previous year.
     
     db_path (str): location of the database.
     county_0 (int): FIPS code of the origin county.
@@ -251,18 +251,20 @@ def __get_move_count(
     county_1 (int): FIPS code of the destination county.
     year (int): time at which to simulate moves.
 
-    Return number of moves (int).
+    Return non-negative number of moves (int).
     '''
     # Get the count from the origin to the desintation county per flow data.
     n = __get_county_to_county_moves(db_path, county_0, county_1, year)
-    if not n:
+    if n <= 0:
         return 0
     # Get the count of arrivals per flow data.
     f = __get_flow_arrivals(db_path, county_1, year, move_t)
-    if not f:
+    if f <= 0:
         return 0
     # Get the count of arrivals per profile data.
     p = __get_profile_arrivals(db_path, county_1, year, move_t)
+    if p <= 0:
+        return 0
     # Return the weighted number of moves.
     return int(n / f * p)
 
