@@ -1,4 +1,4 @@
-# Maine migration
+# maine-migration
 Patrick Lavallee Delgado \
 September 2020
 
@@ -15,9 +15,43 @@ The underlying assumption of this simulation is that individuals move to sort th
 3. To where do they depart?
 4. Who is from away? Are we changing?
 
+### Departures from and arrivals to southern Maine.
+
+![simulated moves](map.png)
+
+#### Top destinations for departures
+
+| Census tract | Town | Moves |
+| ------------ | ---- | ----- |
+| 23019006300 | Orono | 284 |
+| 23017966400 | Oxford | 217 |
+| 23001020300 | Lewiston | 185 |
+| 23007971200 | Farmington | 172 |
+| 23001020900 | Lewiston | 149 |
+| 23007971400 | Jay | 120 |
+| 23009965300 | Bucksport | 114 |
+| 23001020700 | Lewiston | 114 |
+| 23011024102 | Waterville | 113 |
+| 23017966000 | Woodstock | 101 |
+
+#### Top origins for arrivals
+
+| Census tract | Town | Moves |
+| ------------ | ---- | ----- |
+| 23001020700 | Lewiston | 198 |
+| 23001020300 | Lewiston | 189 |
+| 23017966400 | Oxford | 169 |
+| 23019006300 | Orono | 149 |
+| 23011024200 | Waterville | 146 |
+| 23001020900 | Lewiston | 135 |
+| 23001020400 | Lewiston | 106 |
+| 23017966500 | Norway | 100 |
+| 23001044000 | Livermore Falls | 88 |
+| 23001020800 | Lewiston | 88 |
+
 ## Implementation
 
-I developed this project using Python 3.7.4 and it requires the standard library, `numpy` 1.16.4, `pandas` 1.0.5, and any dependencies.
+I developed this project using Python 3.7.4 and it requires the standard library, `numpy` 1.16.4, `pandas` 1.0.5, and their dependencies.
 
 The simulation runs on the command line and writes origin-destination tract pairs to standard output. It accepts arguments for origin county FIPS code `--from`, destination county FIPS code `--to`, and year `--in` in the data. Neither county FIPS code is required.
 
@@ -47,7 +81,7 @@ Tract pairs for which the characteristics of departures are more similar to thos
 c_{t-1}(departures + remainers) = c_{d}departures + c_{r}remainers
 c_{t}(remainers + arrivals) = c_{r}remainers + c_{a}arrivals
 
-c_{t}(departures + remainers) - c_{d}departures = c_{t+1}(remainers + arrivals) - c_{a}arrivals
+c_{t-1}(departures + remainers) - c_{d}departures = c_{t}(remainers + arrivals) - c_{a}arrivals
 ```
 
 This gives one equation with two unknowns, each for the coefficient on departures `c_{d}` and arrivals `c_{a}`. To keep the estimation tractable, I assume arrivals share the characteristics of remainers and ignore that the remainers changes between time steps. Departures are representative of change in the origin tract from the previous year. Arrivals are representative of the destination tract in the current year.
