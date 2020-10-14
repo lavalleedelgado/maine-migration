@@ -4,7 +4,7 @@ September 2020
 
 ## Overview
 
-This project attempts to simulate tract-to-tract move counts from estimated county-to-county quantities in the American Community Survey, five-year migration flows, by the US Census Bureau. The analysis considers migration in an out of southern Maine, but the approach is applicable to any geography.
+This project attempts to simulate tract-to-tract move counts from estimated county-to-county quantities in the American Community Survey, five-year migration flows, by the US Census Bureau. The analysis considers migration in and out of southern Maine, but the approach is applicable to any geography.
 
 ## Southern Maine
 
