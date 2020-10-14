@@ -16,9 +16,9 @@ Moves to and from southern Maine, which is the economic center of the state, can
 
 ![simulated moves](map.png)
 
-### Top destinations for departures from southern Maine
+### Top ten destinations for departures from southern Maine
 
-| Tract | Town | Moves |
+| Census tract | Town | Moves |
 | --- | ---- | ---: |
 | 23019006300 | Orono | 284 |
 | 23017966400 | Oxford | 217 |
@@ -31,9 +31,9 @@ Moves to and from southern Maine, which is the economic center of the state, can
 | 23011024102 | Waterville | 113 |
 | 23017966000 | Woodstock | 101 |
 
-### Top origins for arrivals to southern Maine
+### Top ten origins for arrivals to southern Maine
 
-| Tract | Town | Moves |
+| Census tract | Town | Moves |
 | --- | ---- | ---: |
 | 23001020700 | Lewiston | 198 |
 | 23001020300 | Lewiston | 189 |
